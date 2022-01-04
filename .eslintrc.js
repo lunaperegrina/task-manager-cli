@@ -20,5 +20,6 @@ module.exports = {
         'max-len': 'off',
         'eol-last': 'off',
         camelcase: 'off',
+        'import/extensions': 'off',
     },
 };
