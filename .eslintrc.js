@@ -19,7 +19,6 @@ module.exports = {
         'space-before-function-paren': 'off',
         'max-len': 'off',
         'eol-last': 'off',
-        camelcase: 'off',
-        'import/extensions': 'off',
+        'camelcase': 'off',
     },
 };
