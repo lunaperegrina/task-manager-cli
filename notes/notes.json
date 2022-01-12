@@ -1,9 +1,17 @@
 [{
-        "task": "Task tal e tal",
+        "task": "Fazer cafe",
+        "prioridade": 2
+    },
+    {
+        "task": "Codar",
         "prioridade": 3
     },
     {
-        "task": "Task tal e tal 2",
-        "prioridade": 2
+        "task": "Estudar",
+        "prioridade": 3
+    },
+    {
+        "task": "Ver serie",
+        "prioridade": 1
     }
 ]

@@ -42,3 +42,4 @@ Adiciona sua tarefa em formato de objeto no JSON que está em ```./notes/notes.j
         task ls
 
 Lista suas tasks (obvio)
+stá em ```./notes/notes.json```
