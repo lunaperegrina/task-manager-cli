@@ -1,32 +1,21 @@
 #!/usr/bin/env node
 
-const program = require('commander');
+import { Command } from 'commander/esm.mjs';
+const program = new Command();
 
-// import function to list coffee menu
-const list = require('../lib/list');
-
-/*******************************************/
-
-// Print coffee drinks menu
-// $ coffee-shop list
-// $ coffee-shop ls
-program
-    .command('list') // sub-command name
-    .alias('ls') // alternative sub-command is `al`
-    .description('List coffee menu') // command description
-
-// function to execute when command is uses
-.action(function() {
-    list();
-});
+// import { Tasks } from '../lib/model.js'
+import * as metodos from '../lib/model.js'
+// const tasks = require('../lib/model');
 
 program
-    .command('test')
-    .alias('t')
-    .description('List coffe menu')
+    .command('add <description>')
+    // .alias('a')
+    .description('add a task')
+    .action((description) => {
+        console.log(`task '${description}' adicionada`);
+        // writeTask(description);
+        metodos.test();
+        metodos.writeTask(metodos.saved_notes_dir, description);
+    });
 
-.action(() => { console.log('test') });
-
-
-// allow commander to parse `process.argv`
 program.parse(process.argv);

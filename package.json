@@ -6,6 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "type": "module",
     "bin": {
         "task": "./bin/index.js"
     },
@@ -24,5 +25,8 @@
         "colors": "^1.4.0",
         "commander": "^8.3.0",
         "inquirer": "^8.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.8"
     }
 }
