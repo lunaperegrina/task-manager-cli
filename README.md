@@ -31,4 +31,14 @@ Esse é um Task Manager CLI simples e prático pra você não ter que sair do te
 
         task add <descrição-da-task>
 
-Vai adicionar sua tarefa em formato de objeto no JSON que está em ```./notes/notes.json```
+Adiciona sua tarefa em formato de objeto no JSON que está em ```./notes/notes.json```
+
+2. Task List
+
+        task list
+
+      ou
+
+        task ls
+
+Lista suas tasks (obvio)
