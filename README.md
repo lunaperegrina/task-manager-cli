@@ -8,7 +8,7 @@
 
 Esse é um Task Manager CLI simples e prático pra você não ter que sair do terminal enquanto você ta hackeando a NASA 🪐
 
-## Tecnologias:
+## Tecnologias
 - NodeJS
 - CommanderJS
 
