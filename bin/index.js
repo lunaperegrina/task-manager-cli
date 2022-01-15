@@ -3,13 +3,17 @@
 import { Command } from 'commander/esm.mjs';
 const program = new Command();
 
+import * as colors from 'colors';
+
 import * as metodos from '../lib/model.js'
+
 program
-    .command('add <description>')
+    .command(`add <description>`)
     .description('add a task')
-    .action((description) => {
-        console.log(`task '${description}' adicionada`);
-        metodos.writeTask(metodos.saved_notes_dir, description);
+    .option('-p, --priority <level>', 'add the priority')
+    .action((description, opts) => {
+        console.log("\n Task " + description.green + ` com prioridade ${opts.priority}` + " adicionada!")
+        metodos.writeTask(metodos.saved_notes_dir, description, opts.priority);
     });
 
 program.command('list')
