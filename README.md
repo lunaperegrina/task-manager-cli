@@ -12,7 +12,6 @@ Esse é um Task Manager CLI simples e prático pra você não ter que sair do te
 - NodeJS
 - CommanderJS
 
-
 ## Instalação
 
 ⬇ Baixe as dependencias
@@ -42,4 +41,3 @@ Adiciona sua tarefa em formato de objeto no JSON que está em ```./notes/notes.j
         task ls
 
 Lista suas tasks (obvio)
-stá em ```./notes/notes.json```
