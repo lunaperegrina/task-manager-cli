@@ -7,10 +7,14 @@ import * as colors from 'colors';
 
 import * as metodos from '../lib/model.js'
 
+
+program.version('0.0.1', '-v, --version', 'output the current version');
+
 program
     .command(`add <description>`)
     .description('add a task')
     .option('-p, --priority <level>', 'add the priority')
+    .addOption(new Option('-d, --drink <size>', 'drink size').choices(['small', 'medium', 'large']))
     .action((description, opts) => {
         console.log("\n Task " + description.green + ` com prioridade ${opts.priority}` + " adicionada!")
         metodos.writeTask(metodos.saved_notes_dir, description, opts.priority);
