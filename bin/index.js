@@ -18,4 +18,10 @@ program.command('list')
         metodos.listTasks(metodos.saved_notes_dir);
     })
 
+program.command('delete')
+    .alias('del')
+    .action(() => {
+        metodos.deleteAllTasks();
+    })
+
 program.parse(process.argv);

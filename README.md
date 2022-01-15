@@ -40,4 +40,14 @@ Adiciona sua tarefa em formato de objeto no JSON que está em ```./notes/notes.j
 
         task ls
 
-Lista suas tasks (obvio)
+Lista suas tasks com cores fofas (づ｡◕‿‿◕｡)づ
+
+3. Task delete all
+
+        task delete
+
+      ou
+
+        task del
+
+Famoso ``DELETE FROM`` sem where do SQL, mas agora atacando seu arquivo ```.json```. Cuidado, não temos backup!
