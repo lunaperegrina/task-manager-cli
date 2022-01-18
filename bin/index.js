@@ -16,7 +16,7 @@ program
     // .option('-p, --priority <level>', 'add the priority')
     .addOption(new Option('-p, --priority <level>', 'add the priority').choices(['low', 'normal', 'high']))
     .action((description, opts) => {
-        console.log("\n Task " + description.america + ` com prioridade ${opts.priority}` + " adicionada!")
+        console.log("\n Task " + description + ` com prioridade ${opts.priority}` + " adicionada!")
         metodos.writeTask(metodos.saved_notes_dir, description, opts.priority);
     });
 
