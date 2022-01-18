@@ -28,9 +28,9 @@ Esse é um Task Manager CLI simples e prático pra você não ter que sair do te
 
 1. Task add
 
-        task add <descrição-da-task>
+        task add <descrição-da-task> -p <nivel-de-prioridade>
 
-Adiciona sua tarefa em formato de objeto no JSON que está em ```./notes/notes.json```
+Adiciona sua tarefa em formato de objeto no JSON que está em ```./notes/notes.json```. No nível de prioridade temos ``low``, ``normal`` e ``high`` como opções para o parametro. Caso tenha duvidas, digite ``task`` e irá ver as instrunções do programa.
 
 2. Task List
 
